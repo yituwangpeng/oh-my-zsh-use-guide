@@ -26,8 +26,24 @@ Shell是Linux/Unix的一个外壳，它负责外界与Linux内核的交互，接
 ###自动安装：
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 ###手动安装
+##### 1. Clone the repository:
+
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+##### 2. *Optionally*, backup your existing `~/.zshrc` file:
+    cp ~/.zshrc ~/.zshrc.orig
+
+##### 3. Create a new zsh configuration file
+
+You can create a new zsh config file by copying the template that we included for you.
+
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
+##### 4. Change your default shell
+
+    chsh -s /bin/zsh
+
+##### 5. Initialize your new zsh configuration
 安装完成之后退出当前会话重新打开一个终端窗口，你就可以见到这个彩色的提示了：
 ![ohmyzsh.png](http://d.pcs.baidu.com/thumbnail/5e64051020a14c54d70a92a43a6dd58c?fid=2401735589-250528-921043448399174&time=1458183600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-%2F0rshAfnkGo93kgIOBQupvjQx4Q%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1774228807894188603&dp-callid=0&size=c710_u500&quality=100)
 
